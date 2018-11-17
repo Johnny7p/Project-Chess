@@ -1,6 +1,6 @@
 # Basic Animation Framework
-import Tkinter
-master = Tkinter.Tk()
+from tkinter import *
+
 
 class Game (object):
     def __init__(self):
@@ -108,7 +108,7 @@ def run(width=300, height=300):
     data = Struct()
     data.width = width
     data.height = height
-    root = Tkinter.Tk()
+    root = Tk()
     root.resizable(width=False, height=False) # prevents resizing window
     init(data)
     # create the root and the canvas
